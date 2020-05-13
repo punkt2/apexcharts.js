@@ -238,8 +238,6 @@ class Range {
     const isXNumeric =
       cnf.xaxis.type === 'numeric' ||
       cnf.xaxis.type === 'datetime' ||
-      (cnf.xaxis.type === 'category' && !gl.noLabelsProvided) ||
-      gl.noLabelsProvided ||
       gl.isXNumeric
 
     const getInitialMinXMaxX = () => {
